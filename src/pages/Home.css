@@ -1,0 +1,101 @@
+.containers{
+   padding: 1px;
+   width: 100%;
+   height: auto;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+}
+.card-content{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:20px;
+    margin-left: 50px;
+}
+.place-list-item{
+    display: flex;
+    align-items: center;
+}
+
+.select-form{
+    border-radius: 20px;
+    color: #000000;
+    padding: 5px;
+    width: 185px;
+    height: 40px;
+    border: 1px solid 
+    #134B8A;
+}
+.place-list-span{
+    margin-right: 25px;
+}
+.place-list-input{
+    position: relative;
+}
+.place-list-input i{
+    top:14px;
+    right: 20px;
+    position: absolute;
+}
+
+.place-list-input input{
+    width: 400px;
+    height: 40px;
+    border-radius: 50px;
+    border:1px solid #134B8A;
+    padding: 15px;
+}
+
+
+@media screen and (max-width:420px) {
+    .containers{
+        width: 100%;
+        height: auto;
+     }
+    .card-content{
+        margin-top: 20px;
+        margin-right: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .input-form{
+        padding: 6px;
+        border-radius: 15px;
+        border: 1px solid #134B8A;
+        width: 125px;
+        height: 40px;
+    }
+    .place-list-input input{
+        width: 355px;
+        height: 31px;
+    }
+    .place-list-select{
+        width: 357px;
+        height: 31px;
+    }
+    .select-form{
+        width: 357px;
+        height: 31px;
+    }
+    .place-list-input i{
+        top:9px;
+        right: 16px;
+        position: absolute;
+    }
+    .place-list-item{
+        margin-top:10px;
+    }
+}
